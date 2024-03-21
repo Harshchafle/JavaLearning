@@ -1,3 +1,13 @@
+/*
+ Develop a money class that manages currency values in rupees and paise, ensuring 
+non-negative values for both components. The class constructor initializes a Money object 
+while also validating the range for paise (0 to 99). Additionally, implement methods for 
+addition and subtraction of two Money objects. A display method showcases the current 
+object value. An extra method, INRtoUSDollar(), accepts a Money object and converts the 
+Indian rupee value to its corresponding US Dollar equivalent. Write an appropriate main() 
+method to demonstrate method or constructor overloading.
+*/
+
 class Money{
     int rupee;
     int  paise;
