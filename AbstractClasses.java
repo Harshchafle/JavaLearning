@@ -2,6 +2,7 @@ public abstract class AbstractClasses {
 
     abstract void display();
     abstract void showData();
+    abstract void hideData();
     
     public static void main(String args[]){
         // AbstractClasses obj1 = new AbstractClasses(); // error: AbstractClasses is abstract; cannot be instantiated
