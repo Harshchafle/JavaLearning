@@ -18,7 +18,37 @@ public class Lecture2 {
         // byte z = x * y; // This will cause a compilation error because the result of the expression is promoted to 'int'
         int z = x*y;
 
-        
 
+        // Oobject Oriented Programming 
+        Computer c = new Computer();
+        int res = c.vowels("harshchafle");
+
+        c.playMusic("violin");
+        c.playMusic(9);
     }
+}
+
+class Computer {
+
+    public static int vowels(String str){
+        int count = 0;
+        for(char ch : str.toCharArray()){
+            if(ch == 'a' || ch=='e'||ch=='i'||ch=='o'||ch=='u') count++;
+        }
+        return count;
+    }
+
+    public void playMusic(String a){
+        System.out.println("Music is Playing in String : "+a);
+    }
+    public int playMusic(int a){
+        System.out.println("Music is Playing in Integer : "+a);
+        return 0;
+    }
+
+    // Then we got the Method Overloading and Method Overriding part
+
+    //1. Method Overloading : Methods with same name but different number of parameters
+
+    //2. Method Overriding : Inherited class defining it own function which is available in parent class
 }
